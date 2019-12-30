@@ -15,59 +15,58 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        displayForTeamA(scoreTeamA);
+        displayPointsForTeamA(scoreTeamA);
     }
 
     /**
      * Displays the given score for Team A
      */
-    public void displayForTeamA(int score) {
-        TextView scoreView = findViewById(R.id.team_a_score);
+    public void displayPointsForTeamA(int score) {
+        TextView scoreView = findViewById(R.id.score_game_team_a);
         scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     * This method parses the tag field from the view object and adds it
+     * to the value of scoreTeamA
+     *
+     * @param view
+     */
+    public void addAndDisplayPointsForA(View view) {
+        int points = Integer.parseInt(view.getTag().toString());
+        scoreTeamA = scoreTeamA + points;
+        displayPointsForTeamA(scoreTeamA);
     }
 
     /**
      * Displays the given score for Team A
      */
-    public void displayForTeamB(int score) {
-        TextView scoreView = findViewById(R.id.team_b_score);
+    public void displayPointsForTeamB(int score) {
+        TextView scoreView = findViewById(R.id.score_game_team_b);
         scoreView.setText(String.valueOf(score));
     }
 
-    public void displayThreePointsA(View view) {
-        scoreTeamA = scoreTeamA + 3;
-        displayForTeamA(scoreTeamA);
+    /**
+     * This method parses the tag field from the view object and adds it
+     * to the value of scoreTeamB
+     *
+     * @param view
+     */
+    public void addAndDisplayPointsForB(View view) {
+        int points = Integer.parseInt(view.getTag().toString());
+        scoreTeamB = scoreTeamB + points;
+        displayPointsForTeamB(scoreTeamB);
     }
 
-    public void displayTwoPointsA(View view) {
-        scoreTeamA = scoreTeamA + 2;
-        displayForTeamA(scoreTeamA);
-    }
-
-    public void displayOnePointA(View view) {
-        scoreTeamA++;
-        displayForTeamA(scoreTeamA);
-    }
-
-    public void displayThreePointsB(View view) {
-        scoreTeamB = scoreTeamB + 3;
-        displayForTeamB(scoreTeamB);
-    }
-
-    public void displayTwoPointsB(View view) {
-        scoreTeamB = scoreTeamB + 2;
-        displayForTeamB(scoreTeamB);
-    }
-
-    public void displayOnePointB(View view) {
-        scoreTeamB++;
-        displayForTeamB(scoreTeamB);
-    }
-
+    /**
+     * This button resets the count of both teams
+     *
+     * @param view
+     */
     public void reset(View view) {
         scoreTeamA = 0;
         scoreTeamB = 0;
-        displayForTeamA(scoreTeamA);
-        displayForTeamB(scoreTeamB);
+        displayPointsForTeamA(scoreTeamA);
+        displayPointsForTeamB(scoreTeamB);
     }
 }

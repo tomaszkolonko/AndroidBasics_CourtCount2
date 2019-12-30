@@ -51,8 +51,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="60dp"
-                    android:layout_marginEnd="60dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginEnd="40dp"
                     android:fontFamily="sans-serif-light"
                     android:padding="4dp"
                     android:text="0"
@@ -82,8 +82,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="60dp"
-                    android:layout_marginEnd="60dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginEnd="40dp"
                     android:fontFamily="sans-serif-light"
                     android:padding="4dp"
                     android:text="0"
@@ -99,8 +99,9 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="displayThreePointsA"
-                android:text="+3 Points" />
+                android:onClick="addAndDisplayPointsForA"
+                android:text="+3 Points"
+                android:tag="3" />
 
             <Button
                 android:layout_width="match_parent"
@@ -108,8 +109,9 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="displayTwoPointsA"
-                android:text="+2 Points" />
+                android:onClick="addAndDisplayPointsForA"
+                android:text="+2 Points"
+                android:tag="2" />
 
             <Button
                 android:layout_width="match_parent"
@@ -117,8 +119,9 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="displayOnePointA"
-                android:text="Free Throw" />
+                android:onClick="addAndDisplayPointsForA"
+                android:text="Free Throw"
+                android:tag="1" />
         </LinearLayout>
 
         <View
@@ -167,8 +170,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="60dp"
-                    android:layout_marginEnd="60dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginEnd="40dp"
                     android:fontFamily="sans-serif-light"
                     android:padding="4dp"
                     android:text="0"
@@ -198,8 +201,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="60dp"
-                    android:layout_marginEnd="60dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginEnd="40dp"
                     android:fontFamily="sans-serif-light"
                     android:padding="4dp"
                     android:text="0"
@@ -215,8 +218,9 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="displayThreePointsB"
-                android:text="+3 Points" />
+                android:onClick="addAndDisplayPointsForB"
+                android:text="+3 Points"
+                android:tag="3" />
 
             <Button
                 android:layout_width="match_parent"
@@ -224,8 +228,9 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="displayTwoPointsB"
-                android:text="+2 Points" />
+                android:onClick="addAndDisplayPointsForB"
+                android:text="+2 Points"
+                android:tag="2" />
 
             <Button
                 android:layout_width="match_parent"
@@ -233,8 +238,9 @@
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="displayOnePointB"
-                android:text="Free Throw" />
+                android:onClick="addAndDisplayPointsForB"
+                android:text="Free Throw"
+                android:tag="1" />
 
         </LinearLayout>
 
