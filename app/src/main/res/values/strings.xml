@@ -8,9 +8,7 @@
     <string name="set">Set</string>
     <string name="game">Game</string>
     <string name="initial_value">0</string>
-    <string name="info_text_view">"This is a game of Basketennis (some weird rule mix of both
-        sports).The team which first achieves 21 points or more in a game will win the set.
-        If two sets are won the game is over."</string>
+    <string name="info_text_view">This is a game of Basketennis (some weird rule mix of both sports).The team which first achieves 21 points or more in a game will win the set. If two sets are won the game is over.</string>
 
 
     <!-- Buttons -->
