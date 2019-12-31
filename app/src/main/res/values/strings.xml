@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">CourtCount2</string>
+
+    <!-- TextViews -->
+    <!-- ========= -->
+    <string name="team_name_a">Team A</string>
+    <string name="team_name_b">Team B</string>
+    <string name="set">Set</string>
+    <string name="game">Game</string>
+    <string name="initial_value">0</string>
+    <string name="info_text_view">"This is a game of Basketennis (some weird rule mix of both
+        sports).The team which first achieves 21 points or more in a game will win the set.
+        If two sets are won the game is over."</string>
+
+
+    <!-- Buttons -->
+    <!-- ======= -->
+    <string name="three_point_button">+3 Points</string>
+    <string name="two_point_button">+2 Points</string>
+    <string name="one_point_button">Free Throw</string>
+    <string name="reset">Reset</string>
+    <string name="new_match">New Match?</string>
+
+
 </resources>

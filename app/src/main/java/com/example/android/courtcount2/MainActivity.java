@@ -80,8 +80,8 @@ public class MainActivity extends AppCompatActivity {
         displayPointsForTeamA();
         displayPointsForTeamB();
         updateAllButtons(true);
-        updateInfoTextView("This is a game of Basketennis (some weird rule mix of both sports). The team which first achieves 21 points or more in a game will win the set. If two sets are won the game is over.", false);
-        changeResetButton("Reset");
+        updateInfoTextView(getResources().getString(R.string.info_text_view), false);
+        changeResetButton(getResources().getString(R.string.reset));
     }
 
     /**
@@ -89,10 +89,10 @@ public class MainActivity extends AppCompatActivity {
      * the required 21 points in order to win the game
      */
     private void checkAndUpdateSetIfReached() {
-        if(gameScoreTeamA >= 21) {
+        if (gameScoreTeamA >= 21) {
             setScoreTeamA += 1;
             resetGame();
-        } else if(gameScoreTeamB >= 21) {
+        } else if (gameScoreTeamB >= 21) {
             setScoreTeamB += 1;
             resetGame();
         }
@@ -105,10 +105,10 @@ public class MainActivity extends AppCompatActivity {
      * will be disables except the "new Match / Reset" button.
      */
     private void checkIfMatchIsFinished() {
-        if(setScoreTeamA >= 2) {
+        if (setScoreTeamA >= 2) {
             updateInfoTextView("!!! Team A has won !!!", true);
             setAllButtonsAfterWin();
-        } else if(setScoreTeamB >= 2) {
+        } else if (setScoreTeamB >= 2) {
             updateInfoTextView("!!! Team B has won !!!", true);
             setAllButtonsAfterWin();
         }
@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void setAllButtonsAfterWin() {
         updateAllButtons(false);
-        changeResetButton("New Match?");
+        changeResetButton(getResources().getString(R.string.new_match));
     }
 
     /**
@@ -146,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Sets the text of the reset Button to value of textForButton
+     *
      * @param textForButton
      */
     private void changeResetButton(String textForButton) {

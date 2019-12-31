@@ -23,7 +23,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
-                android:text="Team A"
+                android:text="@string/team_name_a"
                 android:textColor="#616161"
                 android:textSize="20sp" />
 
@@ -38,9 +38,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Set:"
+                    android:text="@string/set"
                     android:textAllCaps="true"
                     android:textColor="#616161"
                     android:textSize="16sp" />
@@ -51,11 +52,11 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="40dp"
                     android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
                     android:fontFamily="sans-serif-light"
                     android:padding="4dp"
-                    android:text="0"
+                    android:text="@string/initial_value"
                     android:textColor="#000"
                     android:textSize="56sp" />
             </RelativeLayout>
@@ -69,9 +70,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Game:"
+                    android:text="@string/game"
                     android:textAllCaps="true"
                     android:textColor="#616161"
                     android:textSize="16sp" />
@@ -82,11 +84,11 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="40dp"
                     android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
                     android:fontFamily="sans-serif-light"
                     android:padding="4dp"
-                    android:text="0"
+                    android:text="@string/initial_value"
                     android:textColor="#000"
                     android:textSize="56sp" />
             </RelativeLayout>
@@ -101,8 +103,8 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="updateAndDisplayPointsForA"
-                android:text="+3 Points"
-                android:tag="3" />
+                android:tag="3"
+                android:text="@string/three_point_button" />
 
             <Button
                 android:id="@+id/button_two_points_a"
@@ -112,8 +114,8 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="updateAndDisplayPointsForA"
-                android:text="+2 Points"
-                android:tag="2" />
+                android:tag="2"
+                android:text="@string/two_point_button" />
 
             <Button
                 android:id="@+id/button_one_point_a"
@@ -123,8 +125,8 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="updateAndDisplayPointsForA"
-                android:text="Free Throw"
-                android:tag="1" />
+                android:tag="1"
+                android:text="@string/one_point_button" />
         </LinearLayout>
 
         <View
@@ -145,7 +147,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
-                android:text="Team B"
+                android:text="@string/team_name_b"
                 android:textColor="#616161"
                 android:textSize="20sp" />
 
@@ -160,9 +162,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Set:"
+                    android:text="@string/set"
                     android:textAllCaps="true"
                     android:textColor="#616161"
                     android:textSize="16sp" />
@@ -173,11 +176,11 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="40dp"
                     android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
                     android:fontFamily="sans-serif-light"
                     android:padding="4dp"
-                    android:text="0"
+                    android:text="@string/initial_value"
                     android:textColor="#000"
                     android:textSize="56sp" />
             </RelativeLayout>
@@ -191,9 +194,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
                     android:layout_marginLeft="40dp"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Game:"
+                    android:text="@string/game"
                     android:textAllCaps="true"
                     android:textColor="#616161"
                     android:textSize="16sp" />
@@ -204,11 +208,11 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="40dp"
                     android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
                     android:fontFamily="sans-serif-light"
                     android:padding="4dp"
-                    android:text="0"
+                    android:text="@string/initial_value"
                     android:textColor="#000"
                     android:textSize="56sp" />
             </RelativeLayout>
@@ -223,8 +227,8 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="updateAndDisplayPointsForB"
-                android:text="+3 Points"
-                android:tag="3" />
+                android:tag="3"
+                android:text="@string/three_point_button" />
 
             <Button
                 android:id="@+id/button_two_points_b"
@@ -234,8 +238,8 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="updateAndDisplayPointsForB"
-                android:text="+2 Points"
-                android:tag="2" />
+                android:tag="2"
+                android:text="@string/two_point_button" />
 
             <Button
                 android:id="@+id/button_one_point_b"
@@ -245,8 +249,8 @@
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="updateAndDisplayPointsForB"
-                android:text="Free Throw"
-                android:tag="1" />
+                android:tag="1"
+                android:text="@string/one_point_button" />
 
         </LinearLayout>
 
@@ -256,11 +260,11 @@
         android:id="@+id/info_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is a game of Basketennis (some weird rule mix of both sports). The team which first achieves 21 points or more in a game will win the set. If two sets are won the game is over."
+        android:layout_above="@id/reset_button"
+        android:layout_below="@id/main_dashboard"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:layout_above="@id/reset_button"
-        android:layout_below="@id/main_dashboard"/>
+        android:text="@string/info_text_view" />
 
     <Button
         android:id="@+id/reset_button"
@@ -270,7 +274,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
         android:onClick="reset"
-        android:text="Reset"
+        android:text="@string/reset"
         android:textAllCaps="true" />
 
 
