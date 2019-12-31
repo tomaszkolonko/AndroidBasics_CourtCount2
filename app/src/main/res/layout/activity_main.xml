@@ -94,32 +94,35 @@
             <!-- BUTTON BLOCK FOR TEAM A -->
 
             <Button
+                android:id="@+id/button_three_points_a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="addAndDisplayPointsForA"
+                android:onClick="updateAndDisplayPointsForA"
                 android:text="+3 Points"
                 android:tag="3" />
 
             <Button
+                android:id="@+id/button_two_points_a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="addAndDisplayPointsForA"
+                android:onClick="updateAndDisplayPointsForA"
                 android:text="+2 Points"
                 android:tag="2" />
 
             <Button
+                android:id="@+id/button_one_point_a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="addAndDisplayPointsForA"
+                android:onClick="updateAndDisplayPointsForA"
                 android:text="Free Throw"
                 android:tag="1" />
         </LinearLayout>
@@ -213,32 +216,35 @@
             <!-- BUTTON BLOCK FOR TEAM A-->
 
             <Button
+                android:id="@+id/button_three_points_b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="addAndDisplayPointsForB"
+                android:onClick="updateAndDisplayPointsForB"
                 android:text="+3 Points"
                 android:tag="3" />
 
             <Button
+                android:id="@+id/button_two_points_b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="addAndDisplayPointsForB"
+                android:onClick="updateAndDisplayPointsForB"
                 android:text="+2 Points"
                 android:tag="2" />
 
             <Button
+                android:id="@+id/button_one_point_b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="addAndDisplayPointsForB"
+                android:onClick="updateAndDisplayPointsForB"
                 android:text="Free Throw"
                 android:tag="1" />
 
@@ -247,9 +253,10 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/info_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="in Progress"
+        android:text="This is a game of Basketennis (some weird rule mix of both sports). The team which first achieves 21 points or more in a game will win the set. If two sets are won the game is over."
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:layout_above="@id/reset_button"
