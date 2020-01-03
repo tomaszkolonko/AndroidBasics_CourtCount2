@@ -18,14 +18,8 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center_horizontal"
-                android:padding="4dp"
-                android:text="@string/team_name_a"
-                android:textColor="#616161"
-                android:textSize="20sp" />
+                style="@style/TextViewTeamName"
+                android:text="@string/team_name_a" />
 
             <!-- SCORE BLOCK FOR TEAM A -->
 
@@ -35,16 +29,8 @@
 
                 <TextView
                     android:id="@+id/view_set_team_a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginLeft="40dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="@string/set"
-                    android:textAllCaps="true"
-                    android:textColor="#616161"
-                    android:textSize="16sp" />
+                    style="@style/TextViewSetGame"
+                    android:text="@string/set" />
 
                 <TextView
                     android:id="@+id/score_set_team_a"
@@ -58,7 +44,7 @@
                     android:padding="4dp"
                     android:text="@string/initial_value"
                     android:textColor="#000"
-                    android:textSize="56sp" />
+                    android:textSize="@dimen/textSizeSuperLarge" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -67,16 +53,8 @@
 
                 <TextView
                     android:id="@+id/view_game_team_a"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginLeft="40dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="@string/game"
-                    android:textAllCaps="true"
-                    android:textColor="#616161"
-                    android:textSize="16sp" />
+                    style="@style/TextViewSetGame"
+                    android:text="@string/game" />
 
                 <TextView
                     android:id="@+id/score_game_team_a"
@@ -90,40 +68,28 @@
                     android:padding="4dp"
                     android:text="@string/initial_value"
                     android:textColor="#000"
-                    android:textSize="56sp" />
+                    android:textSize="@dimen/textSizeSuperLarge" />
             </RelativeLayout>
 
             <!-- BUTTON BLOCK FOR TEAM A -->
 
             <Button
                 android:id="@+id/button_three_points_a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
+                style="@style/GeneralButtonsForPoints"
                 android:onClick="updateAndDisplayPointsForA"
                 android:tag="3"
                 android:text="@string/three_point_button" />
 
             <Button
                 android:id="@+id/button_two_points_a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
+                style="@style/GeneralButtonsForPoints"
                 android:onClick="updateAndDisplayPointsForA"
                 android:tag="2"
                 android:text="@string/two_point_button" />
 
             <Button
                 android:id="@+id/button_one_point_a"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
+                style="@style/GeneralButtonsForPoints"
                 android:onClick="updateAndDisplayPointsForA"
                 android:tag="1"
                 android:text="@string/one_point_button" />
@@ -142,14 +108,8 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center_horizontal"
-                android:padding="4dp"
-                android:text="@string/team_name_b"
-                android:textColor="#616161"
-                android:textSize="20sp" />
+                style="@style/TextViewTeamName"
+                android:text="@string/team_name_b" />
 
             <!-- SCORE BLOCK FOR TEAM B -->
 
@@ -159,16 +119,8 @@
 
                 <TextView
                     android:id="@+id/view_set_team_b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginLeft="40dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="@string/set"
-                    android:textAllCaps="true"
-                    android:textColor="#616161"
-                    android:textSize="16sp" />
+                    style="@style/TextViewSetGame"
+                    android:text="@string/set" />
 
                 <TextView
                     android:id="@+id/score_set_team_b"
@@ -182,7 +134,7 @@
                     android:padding="4dp"
                     android:text="@string/initial_value"
                     android:textColor="#000"
-                    android:textSize="56sp" />
+                    android:textSize="@dimen/textSizeSuperLarge" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -191,16 +143,8 @@
 
                 <TextView
                     android:id="@+id/view_game_team_b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginLeft="40dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:text="@string/game"
-                    android:textAllCaps="true"
-                    android:textColor="#616161"
-                    android:textSize="16sp" />
+                    style="@style/TextViewSetGame"
+                    android:text="@string/game" />
 
                 <TextView
                     android:id="@+id/score_game_team_b"
@@ -214,40 +158,28 @@
                     android:padding="4dp"
                     android:text="@string/initial_value"
                     android:textColor="#000"
-                    android:textSize="56sp" />
+                    android:textSize="@dimen/textSizeSuperLarge" />
             </RelativeLayout>
 
             <!-- BUTTON BLOCK FOR TEAM A-->
 
             <Button
                 android:id="@+id/button_three_points_b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
+                style="@style/GeneralButtonsForPoints"
                 android:onClick="updateAndDisplayPointsForB"
                 android:tag="3"
                 android:text="@string/three_point_button" />
 
             <Button
                 android:id="@+id/button_two_points_b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
+                style="@style/GeneralButtonsForPoints"
                 android:onClick="updateAndDisplayPointsForB"
                 android:tag="2"
                 android:text="@string/two_point_button" />
 
             <Button
                 android:id="@+id/button_one_point_b"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
+                style="@style/GeneralButtonsForPoints"
                 android:onClick="updateAndDisplayPointsForB"
                 android:tag="1"
                 android:text="@string/one_point_button" />

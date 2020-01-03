@@ -6,4 +6,40 @@
         <!-- Background color of buttons in the app -->
         <item name="colorButtonNormal">#FF9800</item>
     </style>
+
+
+    <!-- TextView Style for Team Names -->
+    <style name="TextViewTeamName" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textColor">@color/colorTextViewTextColor</item>
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+    </style>
+
+    <!-- TextView Style for Sets and Games -->
+    <style name="TextViewSetGame" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginStart">40dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textColor">@color/colorTextViewTextColor</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+    </style>
+
+    <!-- Button Style for all points -->
+    <style name="GeneralButtonsForPoints" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
 </resources>
